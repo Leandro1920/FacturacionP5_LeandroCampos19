@@ -46,16 +46,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Formularios\FrmClienteSeleccionar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Formularios\FrmClienteSeleccionar.Designer.cs">
+      <DependentUpon>FrmClienteSeleccionar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmFacturacion.Designer.cs">
+      <DependentUpon>FrmFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmFacturacionItemGestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmFacturacionItemGestion.Designer.cs">
+      <DependentUpon>FrmFacturacionItemGestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmMDIPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmMDIPrincipal.Designer.cs">
+      <DependentUpon>FrmMDIPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmUsuariosGestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmUsuariosGestion.Designer.cs">
+      <DependentUpon>FrmUsuariosGestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjetosGlobales.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Validacion.cs" />
+    <EmbeddedResource Include="Formularios\FrmClienteSeleccionar.resx">
+      <DependentUpon>FrmClienteSeleccionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmFacturacion.resx">
+      <DependentUpon>FrmFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmFacturacionItemGestion.resx">
+      <DependentUpon>FrmFacturacionItemGestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmMDIPrincipal.resx">
+      <DependentUpon>FrmMDIPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmUsuariosGestion.resx">
+      <DependentUpon>FrmUsuariosGestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,6 +131,9 @@
       <Project>{d6ddd612-c514-43fc-9bbc-189c6bf08325}</Project>
       <Name>Logica</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Locales\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
